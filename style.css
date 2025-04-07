@@ -1,0 +1,31 @@
+.background {
+	background-image: url(images/backgrund.png);
+	background-size: cover;
+	background-repeat: no-repeat;
+	background-attachment: fixed;
+}
+
+.header {
+	width: 99vw;
+	height: 20vh;
+	background-image: url(images/Mjausing.png);
+	background-size: 100% 100%;
+	border: solid;
+	border-color: pink;
+}
+
+
+#catImg {
+	width: auto;
+	height: 20vh;
+	margin-left: 5vw;
+}
+
+#cat {
+	width: 50vw;
+	height: 50vh;
+	margin: 20%;
+	border: solid;
+	border-color: black;
+	display: flex;
+}
