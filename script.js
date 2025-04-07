@@ -32,7 +32,7 @@ let scoreText;
 function preload() {
   this.load.image("background", "images/spelgrund.png");
   this.load.image("ball", "images/boll.png");
-  this.load.image("player", "images/idle1.png");
+  this.load.image("player", "images/Idle1.png");
   this.load.image("life", "images/liv.png");
   this.load.image("gameOver", "images/GameOver.png");
 }
