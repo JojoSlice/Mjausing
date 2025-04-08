@@ -81,6 +81,9 @@ function update() {
   } else {
     player.setVelocityX(0);
   }
+  if (cursor.up.isDown && player.body.blocked.down) {
+    player.setVelocityY(-100);
+  }
 
   scoreText.setText(`Poäng: ${score}`);
 
