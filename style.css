@@ -6,7 +6,8 @@
 }
 
 .header {
-	width: 99vw;
+	display: flex;
+	width: 1400px;
 	height: 20vh;
 	background-image: url(images/Mjausing.png);
 	background-size: 100% 100%;
@@ -14,18 +15,18 @@
 	border-color: pink;
 }
 
-
-#catImg {
-	width: auto;
-	height: 20vh;
-	margin-left: 5vw;
+body {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
 }
 
-#cat {
-	width: 50vw;
-	height: 50vh;
-	margin: 20%;
-	border: solid;
-	border-color: black;
+#game-container {
 	display: flex;
+	justify-content: center;
+	align-items: center;
+	height: auto;
+	border: solid;
+	border-color: pink;
 }

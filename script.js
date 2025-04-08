@@ -2,6 +2,7 @@ const config = {
   type: Phaser.AUTO,
   width: 1400,
   height: 650,
+  parent: "game-container",
   physics: {
     default: "arcade",
     arcade: {
@@ -87,6 +88,18 @@ function update() {
     let newBall = createBall(this);
     balls.push(newBall);
   }
+  if (score >= 20 && balls.length === 2) {
+    let newBall = createBall(this);
+    balls.push(newBall);
+  }
+  if (score >= 30 && balls.length === 3) {
+    let newBall = createBall(this);
+    balls.push(newBall);
+  }
+  if (score >= 40 && balls.length === 4) {
+    let newBall = createBall(this);
+    balls.push(newBall);
+  }
 }
 
 function updateLifeIcons(scene) {
@@ -122,9 +135,9 @@ function bounceOnGround(ball, ground) {
   lives--;
 
   if (lives <= 0) {
+    gameOverImage.setAlpha(1);
     console.log("Game Over!");
     this.scene.pause();
-    gameOverImage.setAlpha(1);
   } else {
     updateLifeIcons(this);
   }
